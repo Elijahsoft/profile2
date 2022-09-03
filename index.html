@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/toon1a.png" />
+    <title>Elia profile</title>
+  </head>
+  <body>
+    <div class="nav" id="nav">
+      <img src="./img/toon2a.png" alt="" height="50" />
+      <ul >
+        <li>
+          <a href="#References">References</a>
+        </li>
+       
+        <li>
+          <a href="#platform">Platforms</a>
+        </li>
+        <li>
+          <a href="#chat">Chat</a>
+        </li>
+        <li>
+          <a href="#projects">Project</a>
+        </li>  
+      </ul>
+    </div>
+    <div class="container">
+      <div class="cil">
+        <span class="square"></span>
+        <span class="cube"></span>
+        <span class="square"></span>
+      </div>
+      <div class="line">
+        <div class="flex">
+          <p class="header-sub-title" id="word"></p>
+          <p class="header-sub-title blink">|</p>
+        </div>
+      </div>
+
+      <div class="" >
+        <span class="circle"></span>
+        <span class="center">
+          <h1>KURADUSENGE Elia</h1>
+          <h2>Front-End Developer</h2>
+          <h3>Web Designer</h3>
+        </span>
+        <span class="circle left"></span>
+      </div>
+    </div>
+  
+    <div class="references" id="References">
+        <h1>References</h1>
+     <section class="card-container">       
+      <div class="card">
+        <div class="card-header">
+            <img src="./img/toon3.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <h2> Janvier</h2>
+            <p>Full Stack Developer | Software Engineer | Android Developer</p>
+            <a href="">Contact</a>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <img src="./img/toon5.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <h2> Elia</h2>
+            <p>Front-End Developer | Programmer | Web Designer</p>
+            <a href="">Contact</a>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <img src="./img/toon3.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <h2> Janvier</h2>
+            <p>Full Stack Developer | Software Engineer | Android Developer</p>
+            <a href="">Contact</a>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+            <img src="./img/toon1.jpeg" alt="">
+        </div>
+        <div class="card-body">
+            <h2> Elia</h2>
+            <p>Front-End Developer | Programmer | Web Designer</p>
+            <a href="">Contact</a>
+        </div>
+      </div>
+    </section>     
+  </div>
+  <!-- jsldkl -->
+  <h1 class="head" id="chat">Chat with me</h1>
+  <div class="section" id="form">
+    <form action="">
+            <div class="group" >
+                <label for="">Email</label>
+                <input type="email" placeholder="Enter Email"  style=" font-family: tahoma" required>
+            </div>
+            <div class="group">
+                <label for="">Message</label>
+                <textarea  placeholder="Enter Message"  style=" font-family: tahoma" required></textarea>
+            </div>
+            <div class="group">
+                <input type="submit" value="Send Message">
+            </div>
+    </div>
+    <div class="platforms" id="platform">
+      <h1>Platforms</h1>
+  
+    <div class="platform">
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+        <a href="">Twitter</a>
+        <a href="">Powtoon</a>
+        <a href="">Photopea</a>
+        <a href="">Pinterest</a>
+        <a href="">Gmail</a>
+        <a href="">Freecodecamp</a>
+        <a href="">HackerRank</a>
+        <a href="">Mindluster</a>
+	<a href="">Coursera</a>
+        <a href="">Udemy</a>
+      </div>
+    </div>
+    <div class="project" id="projects">
+      <h1>Project</h1>
+  
+    <div class="projects">
+        <a href="https://elijahsoft.github.io/swiper/index.html">Swiper</a>
+        <a href="https://elijahsoft.github.io/Nomad/">BareFoot Nomad</a>
+        <a href="https://elijahsoft.github.io/Hotel/">Laddie Hotel</a>
+        <a href="https://elijahsoft.github.io/Practice/pallarax/pallarax.html">Pallarax</a>
+        <a href="https://elijahsoft.github.io/Practice/watch/index.html">Watch</a>
+        <a href="https://elijahsoft.github.io/clock/">Timer</a>
+        <a href="https://elijahsoft.github.io/Practice/html/second.html">Random BG</a>
+        <a href="https://elijahsoft.github.io/Practice/html/transform.html">Transform</a>
+        <a href="https://elijahsoft.github.io/Restaurant/">Restaurant</a>
+        <a href="https://elijahsoft.github.io/Profile/">Profile</a>
+        <a href="https://elijahsoft.github.io/Practice/calc/calc.html">Calculator</a>
+        <a href="https://elijahsoft.github.io/Practice/watch/watch.html">Watch</a>
+      </div>
+    </div>
+    <footer class="footer">
+      &copy; Elijahsoft 2022  Kigali,Rwanda
+      <a href="#nav" >Back To top</a>
+    </footer>
+    <script>
+      const words = [
+        "Creative.",
+        "Innovative.",
+        "Hard Working.",
+        "Flexibility.",
+        "Coperation.",
+      ];
+      let i = 0;
+      let timer;
+
+      function typingEffect() {
+        let word = words[i].split("");
+        var loopTyping = function () {
+          if (word.length > 0) {
+            document.getElementById("word").innerHTML += word.shift();
+          } else {
+            deletingEffect();
+            return false;
+          }
+          timer = setTimeout(loopTyping, 200);
+        };
+        loopTyping();
+      }
+
+      function deletingEffect() {
+        let word = words[i].split("");
+        var loopDeleting = function () {
+          if (word.length > 0) {
+            word.pop();
+            document.getElementById("word").innerHTML = word.join("");
+          } else {
+            if (words.length > i + 1) {
+              i++;
+            } else {
+              i = 0;
+            }
+            typingEffect();
+            return false;
+          }
+          timer = setTimeout(loopDeleting, 100);
+        };
+        loopDeleting();
+      }
+
+      typingEffect();
+    
+
+//  const sectio = document.getElementById('form')
+
+    </script>
+  </body>
+</html>
